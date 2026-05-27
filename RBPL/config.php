@@ -27,7 +27,7 @@ date_default_timezone_set('Asia/Jakarta');
 // Function to check login
 function checkLogin() {
     if(!isset($_SESSION['user_id'])) {
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
 }
@@ -35,7 +35,7 @@ function checkLogin() {
 // Function to check role - PERBAIKAN: cek role dengan ketat
 function checkRole($allowed_roles) {
     if(!isset($_SESSION['role'])) {
-        header("Location: ../login.php");
+        header("Location: ../index.php");
         exit();
     }
     
