@@ -4,7 +4,7 @@ require_once __DIR__ . '/../config.php';
 
 // Cek login
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: ../index.php");
     exit();
 }
 
